@@ -41,6 +41,7 @@ form{
           width:3px;
           margin-left: 30px;
       }
+     
     .form-control{
         border: none;
         border-radius: 0;
@@ -48,6 +49,14 @@ form{
         height: auto;
         padding: 10px;
         padding-left: 45px;
+    }
+    #textarea{
+      padding-top: 0;
+      padding-bottom: 0;
+      padding-left: 70px;
+    }
+    #date{
+      padding-left: 20px;
     }
     .buttons{
         margin: 5px;

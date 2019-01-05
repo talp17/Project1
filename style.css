@@ -57,6 +57,16 @@ form .form-control {
   padding-left: 45px;
 }
 
+form #textarea {
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 70px;
+}
+
+form #date {
+  padding-left: 20px;
+}
+
 form .buttons {
   margin: 5px;
   margin-left: 45px;
