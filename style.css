@@ -1,0 +1,177 @@
+@font-face {
+  font-family: unseen;
+  src: url("fonts/unseen.woff");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: unseen;
+  src: url("fonts/unseen.woff2");
+  font-weight: bold;
+}
+
+body {
+  height: 100%;
+  margin: 0px;
+  font-family: unseen;
+  background: url("img/background.jpg") no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+body .container {
+  padding-top: 5%;
+}
+
+body .container h1 {
+  text-align: center;
+  font-size: 60pt;
+}
+
+form {
+  margin: auto;
+  font-family: courier, monospace;
+  width: 70%;
+  background-color: #f5f5f5;
+  margin-top: 3%;
+}
+
+form #date, form #taskhours {
+  text-align: left;
+}
+
+form #lines {
+  position: absolute;
+  border-left: 1px solid #ffaa9f;
+  border-right: 1px solid #ffaa9f;
+  width: 3px;
+  margin-left: 30px;
+}
+
+form .form-control {
+  border: none;
+  border-radius: 0;
+  border-bottom: 1px dotted #ccc;
+  height: auto;
+  padding: 10px;
+  padding-left: 45px;
+}
+
+form .buttons {
+  margin: 5px;
+  margin-left: 45px;
+}
+
+ul, li {
+  list-style: none;
+  margin: 1em;
+  float: left;
+}
+
+ul {
+  overflow: hidden;
+  padding: 3em;
+}
+
+ul li {
+  text-decoration: none;
+  color: #000;
+  background: #ffc;
+  display: block;
+  height: 250px;
+  width: 250px;
+  padding: 1em;
+  -webkit-box-shadow: 5px 5px 7px rgba(33, 33, 33, 0.7);
+          box-shadow: 5px 5px 7px rgba(33, 33, 33, 0.7);
+  -webkit-transform: rotate(-6deg);
+          transform: rotate(-6deg);
+  -webkit-transition: -webkit-transform .15s linear;
+  transition: -webkit-transform .15s linear;
+  transition: transform .15s linear;
+  transition: transform .15s linear, -webkit-transform .15s linear;
+  -webkit-animation-name: fadeIn;
+          animation-name: fadeIn;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+}
+
+ul li h2 {
+  font-size: 140%;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+
+ul li #textNote {
+  height: 180px;
+  overflow: auto;
+}
+
+ul li #textNote p {
+  font-family: "Reenie Beanie",arial,sans-serif;
+  font-size: 180%;
+}
+
+ul li #dateContainer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+ul li .fas {
+  float: right;
+  display: none;
+}
+
+ul li:nth-child(even) {
+  -webkit-transform: rotate(4deg);
+          transform: rotate(4deg);
+  position: relative;
+  top: 5px;
+}
+
+ul li:nth-child(3n) {
+  -webkit-transform: rotate(-3deg);
+          transform: rotate(-3deg);
+  position: relative;
+  top: -5px;
+}
+
+ul li:nth-child(5n) {
+  -webkit-transform: rotate(5deg);
+          transform: rotate(5deg);
+  position: relative;
+  top: -10px;
+}
+
+ul li:hover, ul li:focus {
+  -webkit-box-shadow: 10px 10px 7px rgba(0, 0, 0, 0.7);
+          box-shadow: 10px 10px 7px rgba(0, 0, 0, 0.7);
+  -webkit-transform: scale(1.25);
+          transform: scale(1.25);
+  position: relative;
+  z-index: 5;
+}
+
+ul li:hover .fas, ul li:focus .fas {
+  display: block;
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/*# sourceMappingURL=style.css.map */
