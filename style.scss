@@ -8,7 +8,7 @@
     src: url("fonts/unseen.woff2");
     font-weight: bold;
   }
-
+$color: url("img/background.jpg");
 body{
     height: 100%; 
     margin:0px;
@@ -17,11 +17,21 @@ body{
     background-size: cover;
     background-attachment: fixed;
     .container{
-            padding-top: 5%;
-            h1{
-                text-align: center;
-                font-size: 60pt;
-            }
+      #bigNote{
+          padding:3%;
+          margin: 2em auto;
+          background:	#FFFFCC	;
+          box-shadow: 0 24px 28px 0 rgba(0, 0, 0, 0.2), 0 10px 30px 0 rgba(0, 0, 0, 0.19);
+        img{
+          width: 80px;
+        }
+        h1{
+          padding-top: 2%;
+            text-align: center;
+            font-size: 60pt;
+        }
+      }
+        
     }
 }
 
@@ -31,9 +41,6 @@ form{
     width: 70%;
     background-color: #f5f5f5;
     margin-top: 3%;
-    #date,#taskhours {
-        text-align: left;
-    }
     #lines {
         position: absolute;
           border-left: 1px solid #ffaa9f;
@@ -55,15 +62,20 @@ form{
       padding-bottom: 0;
       padding-left: 70px;
     }
+    #date,#taskhours {
+      text-align: left;
+  }
     #date{
       padding-left: 20px;
     }
-    .buttons{
-        margin: 5px;
-        margin-left: 45px;
-    }
 }
 
+.buttons{
+  padding-top: 2%;
+    .btn{
+      font-size: 20px;
+    }
+}
 
   ul,li{
     list-style:none;
@@ -74,33 +86,35 @@ form{
     overflow:hidden;
     padding:3em;
 
-   li {
-    text-decoration:none;
-    color:#000;
-    background:#ffc;
-    display:block;
-    height:250px;
-    width:250px;
-    padding:1em;
-    box-shadow: 5px 5px 7px rgba(33,33,33,.7);
-    transform: rotate(-6deg);
-    transition: transform .15s linear;
-   
-    animation-name: fadeIn;
-    animation-duration: 2s;
+    li {
+      text-decoration:none;
+      color:#000;
+      background:#ffc;
+      display:block;
+      height:250px;
+      width:250px;
+      padding:1em;
+      box-shadow: 5px 5px 7px rgba(33,33,33,.7);
+      transform: rotate(-6deg);
+      transition: transform .15s linear;
+      animation-name: fadeIn;
+      animation-duration: 2s;
 
-    h2{
-        font-size:140%;
-        font-weight:bold;
-        padding-bottom:10px;
-      }
-     
+      h2{
+          font-size:140%;
+          font-weight:bold;
+          padding-bottom:10px;
+        }
+        .fas{
+          float: right;
+          display: none;
+        }
         #textNote{
           height:180px;
           overflow: auto;
           p{
             font-family:"Reenie Beanie",arial,sans-serif;
-            font-size:180%;
+            font-size:150%;
           }
         }
         #dateContainer{
@@ -109,16 +123,12 @@ form{
             bottom: 0;
             left: 0;
         }
-        
-        .fas{
-            float: right;
-            display: none;
-        }
-        &:nth-child(even) {
-            transform:rotate(4deg);
-            position:relative;
-            top:5px;
-            // background:#cfc;
+    
+          &:nth-child(even) {
+              transform:rotate(4deg);
+              position:relative;
+              top:5px;
+              // background:#cfc;
           }
           &:nth-child(3n) {
             transform:rotate(-3deg);
@@ -141,10 +151,9 @@ form{
                 display: block;
             }
           }
-  }
+    }
 }
   @keyframes fadeIn {
     0%   {opacity: 0;}
     100% {opacity: 1;}
   }
-

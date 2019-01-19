@@ -71,6 +71,8 @@ function removeFromArray(note){
             {
                 notesArray.splice(i,1);
                 localStorage.setItem("note_local", JSON.stringify(notesArray));
+                //remove only the first one with the same data - if there are two same notes
+                break;
             }
         }
     }
